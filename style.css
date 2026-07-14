@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 450px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+h1{
+    text-align: center;
+    color: white;
+    background: linear-gradient(135deg,#2563eb,#7c3aed);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.balance-box{
+    text-align: center;
+    background: #eef5ff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.balance-box h2{
+    margin-top: 10px;
+    color: #2563eb;
+}
+
+.summary{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.income-box,
+.expense-box{
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.income-box{
+    background: #e8fff0;
+}
+
+.expense-box{
+    background: #ffeaea;
+}
+
+.income{
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.expense{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+form{
+    margin-top: 15px;
+}
+
+input,
+select{
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+input:focus,
+select:focus{
+    border-color: #2563eb;
+}
+
+button{
+    width: 100%;
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: scale(1.03);
+}
+
+h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fafafa;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 5px solid #2563eb;
+}
+
+.delete{
+    background: red;
+    width: auto;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.delete:hover{
+    transform: scale(1.05);
+}
+
+@media(max-width:500px){
+
+    .container{
+        width: 90%;
+    }
+
+    .summary{
+        flex-direction: column;
+    }
+}
